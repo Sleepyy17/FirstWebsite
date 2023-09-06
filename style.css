@@ -1,0 +1,144 @@
+@keyframes example {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: green;}
+    75%  {color: blue;}
+    100% {color: red;}
+}
+
+body{
+    font-family: Tahoma;
+    background-color: rgb(255, 106, 80);
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+    transition: opacity 10s ease-in-out;
+}
+
+#main-header {
+    background-color: rgb(255, 106, 80);
+}
+
+.container {
+    width: 80%;
+    margin:auto;
+    overflow: hidden;
+
+}
+
+.container h1{
+    font-family: Tahoma;
+    font-weight: 1000;
+    font-size: 100px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.p-box {
+    font-family: Tahoma;
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid #000;*/
+    margin-top: 15%;
+    line-height: 0em;
+    position: relative;
+}
+
+.p-box .second{
+    margin-top: 0px;
+    position: relative;
+    color: aliceblue;
+    font-size: 24px;
+    text-align: center;
+}
+
+.p-box .third{
+    position: relative;
+    font-size: 200px;
+    text-align: center;
+    color: red;
+    animation-name: example;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+}
+
+.b-box {
+    font-family: Tahoma;
+    text-align: center;
+}
+
+.second-page {
+    padding-top: 23px;
+    text-align: center;
+    font-family: Tahoma;
+    color:white;
+    background-color: rgb(211, 77, 54);
+    width: 100%;
+    height: 100px;
+}
+
+.image-overlay {
+    background-color: rgba(219, 105, 85, 0.411);
+    min-height: 700px;
+}
+
+.image-box h1 {
+    margin: 0px;
+    padding-top: 300px;
+    padding-left: 45%;
+    font-family: Tahoma;
+    font-weight: 1000;
+    font-size: 100px;
+    text-align: right center;
+    color: aliceblue;
+    
+}
+
+/* 
+ANIMATION FROM: https://css-tricks.com/using-multi-step
+-animations-transitions/ 
+*/
+
+button {
+    border: 5px solid transparent;
+    background: #AED6D1;
+    color: #55706D;
+    border-radius: 40px;
+    padding: 15px 30px;
+    overflow: hidden;
+    width: 170px;
+    transition: 
+        all 1.2s,
+        border 0.5s 1.2s,
+        box-shadow 0.3s 1.5s;
+    white-space: nowrap;
+    text-indent: 23px;
+    font-weight: bold;
+}
+
+button span {
+    display: inline-block;
+    transform: translateX(300px);
+    font-weight: normal;
+    opacity: 0;
+    transition: 
+        opacity 0.1s 0.5s,
+        transform 0.4s 0.5s;
+}
+
+button:hover {
+    text-indent: 0;
+    background: #55706D;
+    color: #FFE8A3;
+    width: 250px;
+    border: 10px solid #8DCCC4;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.15);
+}
+
+button:hover span {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+  
